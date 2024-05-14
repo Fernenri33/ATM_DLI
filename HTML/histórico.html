@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histórico</title>
+  <!-- Enlace a Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Estilos CSS personalizados -->
+  <link rel="stylesheet" href="../CSS/stylehistorico.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Panel de Administrador</a>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Menú lateral -->
+      <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="../HTML/home.html">
+                Últimos Eventos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/estadoATM.html">
+                Estado de ATMs
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/histórico.html">
+                Histórico de Eventos
+              </a>
+            </li>
+            <!-- Agrega más elementos de menú según sea necesario -->
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Contenido principal -->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div class="pt-3 pb-2 mb-3 border-bottom">
+          <h2>Histórico de eventos</h2>
+        </div>
+        <div class="search-form">
+            <input type="date" id="date-input">
+            <select id="zone-input">
+                <option value="">Todas las zonas</option>
+                <option value="Zona A">Zona A</option>
+                <option value="Zona B">Zona B</option>
+                <option value="Zona C">Zona C</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+            <select id="atm-input">
+                <option value="">Todos los ATM</option>
+                <option value="ATM 1">ATM 1</option>
+                <option value="ATM 2">ATM 2</option>
+                <option value="ATM 3">ATM 3</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+            <select id="result-input">
+                <option value="">Todos los resultados</option>
+                <option value="Exitoso">Exitoso</option>
+                <option value="Fallido">Fallido</option>
+            </select>
+            <button onclick="searchEvents()">Buscar</button>
+        </div>
+        
+        
+        <div id="results"></div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+        </main>
+    </div>
+
+  <!-- Enlace a Bootstrap JS (opcional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

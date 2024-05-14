@@ -1,0 +1,13 @@
+.card{
+    margin-top:30%;
+}
+.sidebar-sticky{
+    margin-top: 50px;
+    color: black;
+}
+.nav-item a{
+    color:black
+}
+.card-body{
+    margin-top:-30%;
+}

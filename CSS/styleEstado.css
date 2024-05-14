@@ -1,0 +1,14 @@
+.sidebar-sticky{
+    margin-top: 50px;
+    color: black;
+}
+.nav-item a{
+    color:black
+}
+.offline {
+    color: red;
+}
+
+.online {
+    color: green;
+}

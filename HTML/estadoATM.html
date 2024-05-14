@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado</title>
+    <!-- Enlace a Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Estilos CSS personalizados -->
+  <link rel="stylesheet" href="../CSS/styleEstado.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Panel de Administrador</a>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Menú lateral -->
+      <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="../HTML/home.html">
+                Últimos Eventos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/estadoATM.html">
+                Estado de ATMs
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/histórico.html">
+                Histórico de Eventos
+              </a>
+            </li>
+            <!-- Agrega más elementos de menú según sea necesario -->
+          </ul>
+        </div>
+      </nav>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div class="pt-3 pb-2 mb-3 border-bottom">
+          <h2>Últimos Eventos</h2>
+        </div>
+      
+      <div class="container mt-5">
+        <!-- Contenedor para cada ATM -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">ATM 1</h5>
+                        <p class="card-text">Estado: <span class="offline">Offline</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">ATM 2</h5>
+                        <p class="card-text">Estado: <span class="online">Online</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">ATM 3</h5>
+                        <p class="card-text">Estado: <span class="online">Online</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">ATM 4</h5>
+                        <p class="card-text">Estado: <span class="online">Online</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">ATM 5</h5>
+                        <p class="card-text">Estado: <span class="online">Online</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        // Script JavaScript para simular el cambio de estado de los cajeros automáticos
+        setInterval(function() {
+            // Cambiar aleatoriamente el estado de los cajeros automáticos
+            var atms = document.querySelectorAll('.card');
+            atms.forEach(function(atm) {
+                var status = Math.random() < 0.10 ? 'Offline' : 'Online';
+                var statusSpan = atm.querySelector('span');
+                statusSpan.textContent = status;
+                statusSpan.className = status.toLowerCase();
+            });
+        }, 5000); // Cambia el estado cada 5 segundos (5000 milisegundos)
+    </script>
+</body>
+</html>
