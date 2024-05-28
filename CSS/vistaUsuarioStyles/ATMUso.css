@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+body {
+    margin-top: 50px;
+    background-image: url(../../img/Imagendelfondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .title {
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(55, 46, 117);
+  }
+  .description {
+    /*margin-left: 2em;*/
+    font-size: 1.2em;
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(56, 56, 56);
+    text-align: center;
+  }
+  .warning {
+    display: block;
+    align-items:  center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+  }
+  .warning-description {
+    width: auto;
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  .options {
+   /* margin-left: 2.5em;*/
+   display: flex;
+   width: 150px;
+   margin-top: 20px;
+   margin-left: 570px;
+   position: absolute;
+  }
+  .opt-btn{
+    height: 2em;
+    width: 5em;
+    font-size: 20px;
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    border: none;
+    background-color: white;
+  }
+  .opt-description {
+    /*margin-left: 1.6em;*/
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 51, 51);
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .opt-number {
+    border: 1px solid  rgb(0, 0, 0);
+    margin-left: 350px;
+    margin-top: 100px;
+    font-size: 20px;
+    /*margin-left: 3em;*/
+    text-align: center;
+    width: 300px;
+    height: 35px;
+    box-shadow: 1.5px 1.5px 1.5px rgb(49, 43, 90);
+    border-radius: 10px;
+  }
+  .cantidadesFijas{
+    display: flex;
+   flex-direction: column;
+   margin-left: 1000px;
+   margin-top: 40px;
+   position: absolute;
+  }
+  .CFija{
+    width: 120px;
+    height: 50px;
+    margin: 15px;
+    border: none;
+    background-color: rgb(36, 35, 35);
+    color: aliceblue;
+    border-radius: 10px 0px;
+  }
+  .cantidadesFijas1{
+    display: flex;
+   flex-direction: column;
+   margin-top: 40px;
+   position: absolute;
+   margin-left: 800px;
+  }
+  .CFija1{
+    width: 120px;
+    height: 50px;
+    margin: 15px;
+    border: none;
+    background-color: rgb(36, 35, 35);
+    color: aliceblue;
+    border-radius: 10px 0px;
+  }
+  /*Parte de los botones del teclado*/
+  .teclado {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    width: 300px;
+    margin-left: 250px;
+    margin-top: 80px;
+  }
+  
+  .fila {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: 250px;
+  }
+  
+  .boton {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px; /* Agregar bordes redondeados */
+  }
+  .prueba{
+    display: flex;
+  }
