@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema del ATM</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Panel de Administrador</a>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Problema del ATM</h2>
+                <p>Detalles del problema actual del ATM.</p>
+                <!-- Detalles del problema del ATM -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>ATM 1 - Zona A</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6>Error tipo 001:</h6>
+                        <p>Tarjeta atascada.</p>
+                        
+                        <h6>Fecha y Hora del Problema:</h6>
+                        <p>2024-05-10 14:30:00</p>
+
+                        <h6>Estado Actual:</h6>
+                        <p><span class="badge badge-danger">No Resuelto</span></p>
+
+                        <a href="../HTML/AlertaMnesaje.html" class="btn btn-success" role="button">Falsa alarma</a>
+                        <a href="../HTML/AlertaMnesaje.html" class="btn btn-warning" role="button">Llamar a soporte técnico</a>
+                        <a href="../HTML/AlertaMnesaje.html" class="btn btn-info" role="button">Reiniciar sistema</a>
+                        
+
+                    </div>
+                    <br><br>
+                    <a href="../HTML/home.html" class="btn btn-primary btn-lg" role="button">Regresar a inicio</a>
+                    
+                </div>
+
+                <!-- Tabla de eventos recientes relacionados -->
+                <h4>Eventos Recientes Relacionados</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Fecha y Hora</th>
+                                <th scope="col">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Problema con el dispensador de billetes</td>
+                                <td>2024-05-10 14:00:00</td>
+                                <td><span class="badge badge-danger">No Resuelto</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Clientes reportan transacciones fallidas</td>
+                                <td>2024-05-09 16:15:00</td>
+                                <td><span class="badge badge-warning">En Progreso</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>ATM fuera de servicio</td>
+                                <td>2024-05-08 11:45:00</td>
+                                <td><span class="badge badge-success">Resuelto</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Problemas de conexión</td>
+                                <td>2024-05-07 10:20:00</td>
+                                <td><span class="badge badge-success">Resuelto</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace a jQuery (necesario para Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Enlace a Popper.js (necesario para Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <!-- Enlace a Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
